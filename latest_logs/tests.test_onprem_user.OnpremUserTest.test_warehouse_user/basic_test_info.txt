@@ -1,0 +1,17 @@
+tests/test_onprem_user.py::OnpremUserTest::test_warehouse_user
+--------------------------------------------------------------------
+Last Page: https://review.onprem-cloud.nweca.com/nadmin/users
+ Duration: 260.23s
+  Browser: Chrome 124.0.6367.119
+   Driver: chromedriver 124.0.6367.78
+Timestamp: 1715221055  (Unix Timestamp)
+     Date: Thursday, 9 May 2024
+     Time: 10:17:35 AM  (Malay Peninsula Standard Time, UTC+08:00)
+--------------------------------------------------------------------
+Traceback:
+  File "C:\Users\njack\OneDrive\Desktop\SELENIUM PROJECT\ONPREM\tests\test_onprem_user.py", line 443, in test_warehouse_user
+    self.sorting_helper("Name", "#nadmin-roles tbody tr")
+  File "C:\Users\njack\OneDrive\Desktop\SELENIUM PROJECT\ONPREM\page_objects\user.py", line 163, in sorting_helper
+    assert first_row_value <= last_row_value, f"Sorting order for column '{column_name}' is incorrect"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: '<=' not supported between instances of 'str' and 'NoneType'
