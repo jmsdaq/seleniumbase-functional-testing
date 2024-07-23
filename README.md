@@ -16,39 +16,39 @@ Before you can start writing automated tests with SeleniumBase, you need to set 
 ## Writing Tests
 Once you have set up your environment, you can start writing tests using SeleniumBase. Here's a simple example:
 
-    ```python
-    from seleniumbase import BaseCase
+```python
+from seleniumbase import BaseCase
 
-    class LoginPage(BaseCase):
+class LoginPage(BaseCase):
 
-        def login(self):
-            # Open the login page
-            self.open("https://review.onprem-cloud.nweca.com")
-            self.maximize_window()
-            self.type("input[type='username']", "username")
-            self.type("input[type='password']", "password")
-            self.click('input[type="submit"]')
-    ```
+    def login(self):
+        # Open the login page
+        self.open("https://onprem.nweca.com")
+        self.maximize_window()
+        self.type("input[type='username']", "username")
+        self.type("input[type='password']", "password")
+        self.click('input[type="submit"]')
+```
 
 ## Running Tests
 To run your tests, you can use the following command in your terminal:
 
-    ```sh
-    pytest my_test_case.py
-    ```
+```sh
+pytest my_test_case.py
+```
 
 Make sure to replace `my_test_case.py` with the name of your test file.
 
 To run tests in verbose mode and with demo mode (showing browser actions), use:
 
 
-    ```sh
-    pytest -v --demo
-    ```
+```sh
+pytest -v --demo
+```
 Demo Mode helps you see what a test is doing.
 
 ## Directory Structure
-When organizing your SeleniumBase project, it's helpful to follow a structured layout. Here's an example directory structure:
+
 
 ```bash
 seleniumbase/                        
@@ -89,7 +89,7 @@ seleniumbase/
 ├── pytest.ini                  # Pytest configuration
 └── setup.cfg                   # Project setup configuration
 ```
-
+When running tests with **``pytest``**, you'll want a copy of **[pytest.ini](https://github.com/jmsdaq/seleniumbase-functional-testing/blob/main/pytest.ini)** in your root folders. When running tests with **``pynose``**, you'll want a copy of **[setup.cfg](https://github.com/jmsdaq/seleniumbase-functional-testing/blob/main/setup.cfg)** in your root folders. These files specify default configuration details for tests. Test folders should also include a blank **[__init__.py](https://github.com/jmsdaq/seleniumbase-functional-testing/blob/main/tests/__init__.py)** file to allow your test files to import other files from that folder.
 
 ## Troubleshooting
 If you encounter any issues, check the following:
