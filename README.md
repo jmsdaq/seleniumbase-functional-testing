@@ -136,7 +136,7 @@ When combining pytest html reports with SeleniumBase Dashboard usage, the pie ch
 pytest test_suite.py --dashboard --html=report.html
 ```
 
-<img src="![Screenshot 2024-07-26 152346](https://github.com/user-attachments/assets/6fb22636-26db-4332-ae00-1055ae1a554a)" alt="Example Pytest Report" title="Example Pytest Report" width="520" />
+<img src="assets/seleniumbase-dashboard.png" alt="Sample Run" width="520"/>
 
 ## Troubleshooting
 If you encounter any issues, check the following:
