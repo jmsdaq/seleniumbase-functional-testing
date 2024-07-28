@@ -57,8 +57,7 @@ To run tests in verbose mode and with demo mode (showing browser actions), use:
 Here's <a href="https://github.com/jmsdaq/seleniumbase-functional-testing/blob/main/tests/test_export.py">test_export.py</a>
 
 
-<a href="https://github.com/seleniumbase/SeleniumBase/blob/master/examples/my_first_test.py"><img src="https://github.com/user-attachments/assets/49fc50fc-1f18-4285-9434-820de6f7fe27" alt="SeleniumBase Test" title="SeleniumBase Test" width="520" /></a>
-
+![Seleniumbase Test](/assets/sample_demo.mov)
 
 ```sh
 cd tests/
@@ -137,7 +136,9 @@ When combining pytest html reports with SeleniumBase Dashboard usage, the pie ch
 pytest test_suite.py --dashboard --html=report.html
 ```
 
-<img src="![Screenshot 2024-07-26 152346](https://github.com/user-attachments/assets/6fb22636-26db-4332-ae00-1055ae1a554a)" alt="Example Pytest Report" title="Example Pytest Report" width="520" />
+<!-- <img src="![Screenshot 2024-07-26 152346](https://github.com/user-attachments/assets/cdf46711-195a-407e-8f5b-71b634a033fc)" alt="Example Pytest Report" title="Example Pytest Report" width="520" /> -->
+
+<img src="assets/seleniumbase-dashboard.png" alt="Sample Run" width="520"/>
 
 ## Troubleshooting
 If you encounter any issues, check the following:
