@@ -39,6 +39,7 @@ class LoginPage(BaseCase):
         self.type("input[type='username']", "username")
         self.type("input[type='password']", "password")
         self.click('input[type="submit"]')
+        self.assert_url("https://onprem.nweca.com/dashboard")
 ```
 
 ## Running Tests
